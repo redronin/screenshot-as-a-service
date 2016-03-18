@@ -33,5 +33,5 @@ whitelist:
 
 security:
     basic:
-#        username: admin
-#        password: admin
+        username: phototripster
+        password: phototripster
