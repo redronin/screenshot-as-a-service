@@ -1,15 +1,83 @@
 {
-  "name": "screenshot-as-a-service",
-  "description": "Website screenshot service powered by node.js and phantomjs",
-  "version": "1.1.0",
-  "repository": "https://github.com/fzaninotto/screenshot-as-a-service",
-  "engines": {
-    "node": ">=0.8.4"
-  },
-  "dependencies": {
-    "express": "3.x",
-    "config": "0.4.15",
-    "newrelic": "^1.17.0",
-    "request": "2.9.153"
-  }
+    "name": "manet",
+    "version": "0.4.11",
+    "description": "Website screenshot service powered by Node.js, SlimerJS and PhantomJS",
+    "license": "MIT",
+
+    "repository": "vbauer/manet",
+    "homepage": "https://github.com/vbauer/manet",
+    "bugs": "https://github.com/vbauer/manet/issues",
+
+    "main": "./src/runner.js",
+
+    "bin": {
+        "manet": "./bin/manet"
+    },
+
+    "author": {
+        "name": "Vladislav Bauer",
+        "email": "bauer.vlad@gmail.com",
+        "url": "https://github.com/vbauer"
+    },
+
+    "keywords": [
+        "screenshot",
+        "thumbnail",
+        "slimerjs",
+        "slimer",
+        "phantomjs",
+        "phantom",
+        "picture",
+        "image",
+        "website",
+        "screen",
+        "site",
+        "page",
+        "scr",
+        "service",
+        "server"
+    ],
+
+    "engines": {
+        "node": ">=4.0.0",
+        "npm": ">=2.14.2"
+    },
+
+    "scripts": {
+        "lint": "jshint src test example public/js/app.js",
+        "test": "mocha"
+    },
+
+    "dependencies": {
+        "express": "^4.13.4",
+        "request": "^2.69.0",
+        "body-parser": "^1.15.0",
+        "helmet": "^1.1.0",
+        "passport": "^0.3.2",
+        "passport-http": "^0.3.0",
+        "fs-extra": "^0.26.5",
+        "nconf": "^0.8.4",
+        "js-yaml": "^3.5.3",
+        "cloud-env": "^0.2.1",
+        "joi": "^8.0.3",
+        "qs": "^6.1.0",
+        "lodash": "^4.5.1",
+        "winston": "^2.2.0",
+        "squirrel": "^1.0.0",
+        "url-pattern": "^1.0.1"
+    },
+
+    "pluginDependencies": {
+        "imagemin": "^3.2.2",
+        "imagemin-gifsicle": "^4.2.0",
+        "imagemin-jpegtran": "^4.3.1",
+        "imagemin-optipng": "^4.3.0",
+        "imagemin-svgo": "^4.1.2"
+    },
+
+    "devDependencies": {
+        "jshint": "^2.9.1",
+        "mocha": "^2.3.4",
+        "w3cjs": "^0.3.0"
+    }
 }
